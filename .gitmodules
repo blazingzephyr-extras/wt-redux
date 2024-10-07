@@ -1,0 +1,6 @@
+[submodule "FNA"]
+	path = FNA
+	url = https://github.com/FNA-XNA/FNA
+[submodule "ecslite"]
+	path = ecslite
+	url = https://github.com/Leopotam/ecslite
