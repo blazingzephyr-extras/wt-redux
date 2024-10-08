@@ -1,11 +1,11 @@
 ﻿
 using Microsoft.Xna.Framework;
 
-namespace WTRedux
+namespace WT
 {
     internal class Program
     {
-        void Main()
+        static void Main()
         {
             Game game = new Game();
             game.Run();

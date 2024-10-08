@@ -37,13 +37,16 @@ Global
 		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Debug|x86.Build.0 = Debug|Any CPU
 		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x64.ActiveCfg = Release|Any CPU
-		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x64.Build.0 = Release|Any CPU
-		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x86.ActiveCfg = Release|Any CPU
-		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x86.Build.0 = Release|Any CPU
+		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x64.ActiveCfg = Release|x64
+		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x64.Build.0 = Release|x64
+		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x86.ActiveCfg = Release|x86
+		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {158BBA58-5AA6-4A86-AA5B-022B4593A156}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = FNA.csproj
