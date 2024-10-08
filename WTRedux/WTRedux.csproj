@@ -6,7 +6,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <Platforms>AnyCPU;x86;x64</Platforms>
-    <StartupObject>WorldTour.Program</StartupObject>
+    <StartupObject>WorldTour.WTGame</StartupObject>
     <AssemblyName>World Tour IV</AssemblyName>
     <RootNamespace>WorldTour</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
