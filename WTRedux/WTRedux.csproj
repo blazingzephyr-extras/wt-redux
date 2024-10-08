@@ -94,6 +94,14 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Include="..\ecslite\src\components.cs" Link="ecslite\components.cs" />
+    <Compile Include="..\ecslite\src\entities.cs" Link="ecslite\entities.cs" />
+    <Compile Include="..\ecslite\src\filters.cs" Link="ecslite\filters.cs" />
+    <Compile Include="..\ecslite\src\systems.cs" Link="ecslite\systems.cs" />
+    <Compile Include="..\ecslite\src\worlds.cs" Link="ecslite\worlds.cs" />
+  </ItemGroup>
 	
   <ItemGroup>
     <ProjectReference Include="..\FNA\FNA.csproj" />
