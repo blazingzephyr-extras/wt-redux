@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <Platforms>AnyCPU;x86;x64</Platforms>
+    <Platforms>x86;x64</Platforms>
     <StartupObject>WorldTour.WTGame</StartupObject>
     <AssemblyName>World Tour IV</AssemblyName>
     <RootNamespace>WorldTour</RootNamespace>
@@ -48,9 +48,9 @@
   </ItemGroup>
 
   <Target Name="CopyLibs" AfterTargets="PreBuildEvent" Condition="$([MSBuild]::IsOsPlatform('Windows'))">
-    <Exec Command="call setup.sh $(IntermediateOutputPath)" />
+    <Exec Command="call setup.sh $(BaseIntermediateOutputPath)" />
     <ItemGroup>
-      <Libs Include="$(IntermediateOutputPath)\fnalibs3\$(Platform)\**\*.dll"/>
+      <Libs Include="$(BaseIntermediateOutputPath)\fnalibs3\$(Platform)\**\*.dll"/>
     </ItemGroup>
     <Copy SourceFiles="@(Libs)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
   </Target>
