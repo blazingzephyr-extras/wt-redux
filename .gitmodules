@@ -4,3 +4,6 @@
 [submodule "ecslite"]
 	path = ecslite
 	url = https://github.com/Leopotam/ecslite
+[submodule "physfs"]
+	path = physfs
+	url = https://github.com/icculus/physfs
