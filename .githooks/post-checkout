@@ -1,5 +1,7 @@
 #!/bin/bash
-
-echo "Building physfs."
+git submodule update --init --recursive
 sleep 1
-cmake -S "physfs" -B "physfs/build" -G "Visual Studio 17 2022" -A "x64" -DCMAKE_CONFIGURATION_TYPES="Debug;Release" -DPHYSFS_DISABLE_INSTALL=ON -DPHYSFS_BUILD_STATIC=OFF
+
+if ! [ -d "physfs/build" ]; then
+    cmake -S "physfs" -B "physfs/build" -G "Visual Studio 17 2022" -A "x64" -DCMAKE_CONFIGURATION_TYPES="Debug;Release" -DPHYSFS_DISABLE_INSTALL=ON -DPHYSFS_BUILD_STATIC=OFF
+fi
