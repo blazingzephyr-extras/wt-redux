@@ -37,7 +37,12 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\FNA\FNA.csproj" />
-		<ProjectReference Include="..\physfs\build\physfs.vcxproj" />
+		<ProjectReference Include="..\..\PhysFS.NET\PhysFS.NET\PhysFS.NET.csproj" />
+		<ProjectReference Include="..\..\PhysFS.NET\physfs\build\physfs.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+			<OutputItemType>Content</OutputItemType>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</ProjectReference>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -51,7 +56,7 @@
 	<Target Name="CopyLibs" AfterTargets="PreBuildEvent" Condition="$([MSBuild]::IsOsPlatform('Windows'))">
 		<Exec Command="call $(ProjectDir)/setup.sh $(IntermediateOutputPath)" />
 		<ItemGroup>
-			<Libs Include="$(BaseIntermediateOutputPath)\fnalibs3\$(Platform)\**\*;$(SolutionDir)\physfs\build\$(Configuration)\*" />
+			<Libs Include="$(BaseIntermediateOutputPath)\fnalibs3\$(Platform)\**\*" />
 		</ItemGroup>
 		<Copy SourceFiles="@(Libs)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
 	</Target>

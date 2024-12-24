@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.githooks\post-checkout = .githooks\post-checkout
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "physfs", "physfs\build\physfs.vcxproj", "{A14C99D7-FA76-3876-A9A2-9CFE5951C391}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysFS.NET", "..\PhysFS.NET\PhysFS.NET\PhysFS.NET.csproj", "{32124DE3-CDCA-4CA9-842C-9018FE991493}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Debug|x64.Build.0 = Debug|x64
 		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x64.ActiveCfg = Release|x64
 		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x64.Build.0 = Release|x64
-		{A14C99D7-FA76-3876-A9A2-9CFE5951C391}.Debug|x64.ActiveCfg = Debug|x64
-		{A14C99D7-FA76-3876-A9A2-9CFE5951C391}.Debug|x64.Build.0 = Debug|x64
-		{A14C99D7-FA76-3876-A9A2-9CFE5951C391}.Release|x64.ActiveCfg = Release|x64
-		{A14C99D7-FA76-3876-A9A2-9CFE5951C391}.Release|x64.Build.0 = Release|x64
+		{32124DE3-CDCA-4CA9-842C-9018FE991493}.Debug|x64.ActiveCfg = Debug|x64
+		{32124DE3-CDCA-4CA9-842C-9018FE991493}.Debug|x64.Build.0 = Debug|x64
+		{32124DE3-CDCA-4CA9-842C-9018FE991493}.Release|x64.ActiveCfg = Release|x64
+		{32124DE3-CDCA-4CA9-842C-9018FE991493}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
