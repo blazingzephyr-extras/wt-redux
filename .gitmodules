@@ -7,3 +7,6 @@
 [submodule "PhysFS.NET"]
 	path = PhysFS.NET
 	url = https://github.com/blazingzephyr/PhysFS.NET
+[submodule "spine-runtimes"]
+	path = spine-runtimes
+	url = https://github.com/EsotericSoftware/spine-runtimes
