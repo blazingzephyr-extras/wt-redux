@@ -13,7 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.githooks\post-checkout = .githooks\post-checkout
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysFS.NET", "..\PhysFS.NET\PhysFS.NET\PhysFS.NET.csproj", "{32124DE3-CDCA-4CA9-842C-9018FE991493}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysFS.NET", "PhysFS.NET\PhysFS.NET\PhysFS.NET.csproj", "{C10D42AB-CFCA-08DE-0AE8-A77D92243353}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "physfs", "PhysFS.NET\physfs\build\physfs.vcxproj", "{1762B394-4ADE-3F66-BA8D-7D0E9679A5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-fna", "spine-fna\spine-fna.csproj", "{72EEE212-A7BE-49DA-9C49-F854B2A160BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +33,18 @@ Global
 		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Debug|x64.Build.0 = Debug|x64
 		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x64.ActiveCfg = Release|x64
 		{734FA36F-0AB2-4FC0-81F7-AE2E6F6F53B0}.Release|x64.Build.0 = Release|x64
-		{32124DE3-CDCA-4CA9-842C-9018FE991493}.Debug|x64.ActiveCfg = Debug|x64
-		{32124DE3-CDCA-4CA9-842C-9018FE991493}.Debug|x64.Build.0 = Debug|x64
-		{32124DE3-CDCA-4CA9-842C-9018FE991493}.Release|x64.ActiveCfg = Release|x64
-		{32124DE3-CDCA-4CA9-842C-9018FE991493}.Release|x64.Build.0 = Release|x64
+		{C10D42AB-CFCA-08DE-0AE8-A77D92243353}.Debug|x64.ActiveCfg = Debug|x64
+		{C10D42AB-CFCA-08DE-0AE8-A77D92243353}.Debug|x64.Build.0 = Debug|x64
+		{C10D42AB-CFCA-08DE-0AE8-A77D92243353}.Release|x64.ActiveCfg = Release|x64
+		{C10D42AB-CFCA-08DE-0AE8-A77D92243353}.Release|x64.Build.0 = Release|x64
+		{1762B394-4ADE-3F66-BA8D-7D0E9679A5F4}.Debug|x64.ActiveCfg = Debug|x64
+		{1762B394-4ADE-3F66-BA8D-7D0E9679A5F4}.Debug|x64.Build.0 = Debug|x64
+		{1762B394-4ADE-3F66-BA8D-7D0E9679A5F4}.Release|x64.ActiveCfg = Release|x64
+		{1762B394-4ADE-3F66-BA8D-7D0E9679A5F4}.Release|x64.Build.0 = Release|x64
+		{72EEE212-A7BE-49DA-9C49-F854B2A160BC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{72EEE212-A7BE-49DA-9C49-F854B2A160BC}.Debug|x64.Build.0 = Debug|Any CPU
+		{72EEE212-A7BE-49DA-9C49-F854B2A160BC}.Release|x64.ActiveCfg = Release|Any CPU
+		{72EEE212-A7BE-49DA-9C49-F854B2A160BC}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
