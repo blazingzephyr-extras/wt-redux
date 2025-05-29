@@ -173,8 +173,14 @@
     <Compile Include="..\spine-runtimes\spine-monogame\spine-monogame\src\SkeletonRenderer.cs">
       <Link>spine-monogame\SkeletonRenderer.cs</Link>
     </Compile>
+    <Compile Include="..\spine-runtimes\spine-monogame\spine-monogame\src\Util.cs">
+      <Link>spine-monogame\Util.cs</Link>
+    </Compile>
     <Compile Include="..\spine-runtimes\spine-monogame\spine-monogame\src\VertexEffect.cs">
       <Link>spine-monogame\VertexEffect.cs</Link>
+    </Compile>
+    <Compile Include="..\spine-runtimes\spine-monogame\spine-monogame\src\XnaTextureLoader.cs">
+      <Link>spine-monogame\XnaTextureLoader.cs</Link>
     </Compile>
   </ItemGroup>
 </Project>

@@ -52,6 +52,7 @@
 		<Compile Include="..\ecslite\src\filters.cs" Link="ecslite\filters.cs" />
 		<Compile Include="..\ecslite\src\systems.cs" Link="ecslite\systems.cs" />
 		<Compile Include="..\ecslite\src\worlds.cs" Link="ecslite\worlds.cs" />
+		<Compile Include="..\spine-physfs\src\PhysFsTextureLoader.cs" Link="spine-physfs\PhysFsTextureLoader.cs" />
 	</ItemGroup>
 
 	<Target Name="CopyLibs" AfterTargets="PreBuildEvent" Condition="$([MSBuild]::IsOsPlatform('Windows'))">
