@@ -55,21 +55,23 @@
 		<Compile Include="..\spine-physfs\src\PhysFsTextureLoader.cs" Link="spine-physfs\PhysFsTextureLoader.cs" />
 	</ItemGroup>
 
-	<Target Name="CopyLibs" AfterTargets="PreBuildEvent" Condition="$([MSBuild]::IsOsPlatform('Windows'))">
+	<Target Name="DownloadLibs" AfterTargets="PreBuildEvent" Condition="$([MSBuild]::IsOsPlatform('Windows')) AND !Exists('$(BaseIntermediateOutputPath)\fnalibs')">
 		<Exec Command="&quot;C:/Program Files/GitHub CLI/gh.exe&quot; auth login" />
-		<Exec Command="&quot;C:/Program Files/GitHub CLI/gh.exe&quot; run download --repo FNA-XNA/fnalibs-dailies --dir &quot;$(IntermediateOutputPath)\&quot;" />
+		<Exec Command="&quot;C:/Program Files/GitHub CLI/gh.exe&quot; run download --repo FNA-XNA/fnalibs-dailies --dir &quot;$(BaseIntermediateOutputPath)\&quot;" />
+	</Target>
+
+	<Target Name="CopyLibs" AfterTargets="PreBuildEvent" Condition="$([MSBuild]::IsOsPlatform('Windows'))">
 		<ItemGroup>
-			<Libs Include="$(IntermediateOutputPath)\fnalibs\$(Platform)\**\*" />
+			<Libs Include="$(BaseIntermediateOutputPath)\fnalibs\$(Platform)\**\*" />
 		</ItemGroup>
 		<Copy SourceFiles="@(Libs)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
 	</Target>
-
-	<Target Name="CopyContent" AfterTargets="PreBuildEvent">
+	
+	<Target Name="CopyAssets" AfterTargets="PreBuildEvent">
 		<ItemGroup>
-			<Content Include="$(ProjectDir)\Content\**">
-				<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			</Content>
+			<Assets Include="$(ProjectDir)\assets\**" />
 		</ItemGroup>
+		<Copy SourceFiles="@(Assets)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
 	</Target>
 
 </Project>
